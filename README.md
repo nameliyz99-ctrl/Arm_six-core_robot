@@ -1,15 +1,17 @@
-# 24赛季国赛工程机械臂结构描述文件
+# 六轴工程机械臂结构描述文件
 
-`main` 分支为24赛季国赛工程
+`main` 分支为RM24赛季国赛工程机器人
 
 ## 可视化
 
 ```bash
 # 提前进入机械臂描述文件urdf的工作环境
 # 如 机械臂描述文件urdf 在 ~/Desktop/arm_ws 路径编译
-# source ~/Desktop/arm_ws/install/setup.bash 
+#cd Arm_six-core_robot
+# source install/setup.bash 
 
-ros2 launch arm_description display.launch.py 
+ros2 launch arm_description display.launch.py //运行模型文件
+ros2 run arm_bringup random_test.cpp//开始规划动作，执行预设动作 
 ```
 ## 统一规定
 
